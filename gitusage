@@ -1,0 +1,12 @@
+----Add a repository and do first commit----
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Maegorn/test.git
+git push -u origin master
+----Push modify file into an existing repository-----
+git remote set-url origin https://github.com/Maegorn/test.git
+git commit -m "second commit"
+git push -u origin master
+
